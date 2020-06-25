@@ -1,0 +1,14 @@
+2.
+labnbd@labnbd-virtual-machine:~$ curl -i http://localhost:8098/buckets/s13898/keys/Carol
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fsZE51owMPgpZjAlMuaxMkwryLzBlwUA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.8 (that head fake, tho)
+Link: </buckets/s13898>; rel="up"
+Last-Modified: Thu, 25 Jun 2020 19:01:42 GMT
+ETag: "6wfTxwdrM40pOEwT10b2SC"
+Date: Thu, 25 Jun 2020 19:02:33 GMT
+Content-Type: application/json
+Content-Length: 81
+
+{"firstName": "Carol", "lastName": "Cbacki", "height": 182, "unemployed": false }

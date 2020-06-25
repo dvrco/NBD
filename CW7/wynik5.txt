@@ -1,0 +1,8 @@
+5.
+labnbd@labnbd-virtual-machine:~$ curl -XPUT -i -H "Content-Type: application/json" -d '{"firstName": "Julia", "lastName": "Ebacki", "height": 190, "drivingLicense": false}' http://localhost:8098/buckets/s13898/keys/Julia
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.8 (that head fake, tho)
+Date: Thu, 25 Jun 2020 19:05:41 GMT
+Content-Type: application/json
+Content-Length: 0

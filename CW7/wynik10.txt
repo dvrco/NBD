@@ -1,0 +1,10 @@
+10.
+labnbd@labnbd-virtual-machine:~$ curl -XDELETE -i http://localhost:8098/buckets/s13898/keys/ZVQWrb2s4kYFwSdMmG4YHl0w7Z8
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.8 (that head fake, tho)
+Date: Thu, 25 Jun 2020 19:09:18 GMT
+Content-Type: application/json
+Content-Length: 0
+
+labnbd@labnbd-virtual-machine:~$

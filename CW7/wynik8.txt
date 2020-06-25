@@ -1,0 +1,9 @@
+8.
+labnbd@labnbd-virtual-machine:~$ curl -i -H "Content-Type: application/json" -d '{"firstName": "Hose"}' http://localhost:8098/buckets/s13898/keys
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.8 (that head fake, tho)
+Location: /buckets/s13898/keys/ZVQWrb2s4kYFwSdMmG4YHl0w7Z8
+Date: Thu, 25 Jun 2020 19:07:09 GMT
+Content-Type: application/json
+Content-Length: 0

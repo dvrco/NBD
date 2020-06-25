@@ -1,0 +1,25 @@
+9.
+labnbd@labnbd-virtual-machine:~$ curl -i http://localhost:8098/buckets/s13898/keys?keys=true
+HTTP/1.1 200 OK
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.8 (that head fake, tho)
+Date: Thu, 25 Jun 2020 19:07:38 GMT
+Content-Type: application/json
+Content-Length: 71
+
+{"keys":["Carol","John","Kevin","ZVQWrb2s4kYFwSdMmG4YHl0w7Z8","Fiona"]}labnbd@labnbd-virtual-machine:~$
+
+
+labnbd@labnbd-virtual-machine:~$ curl -i http://localhost:8098/buckets/s13898/keys/ZVQWrb2s4kYFwSdMmG4YHl0w7Z8
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fsYk1wYxMPgpZjAlMuaxMtwtzLzBlwUA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.8 (that head fake, tho)
+Link: </buckets/s13898>; rel="up"
+Last-Modified: Thu, 25 Jun 2020 19:07:09 GMT
+ETag: "4rDwTNd25AdrOSa3KmtwPu"
+Date: Thu, 25 Jun 2020 19:08:18 GMT
+Content-Type: application/json
+Content-Length: 21
+
+{"firstName": "Hose"}labnbd@labnbd-virtual-machine:~$

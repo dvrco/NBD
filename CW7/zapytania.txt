@@ -1,0 +1,34 @@
+﻿Zadanie 1.
+curl -XPUT -i -H "Content-Type: application/json" -d '{"firstName": "John", "lastName": "Abacki", "height": 177, "unemployed": false }' http://localhost:8098/buckets/s13898/keys/John
+curl -XPUT -i -H "Content-Type: application/json" -d '{"firstName": "Kevin", "lastName": "Bbacki", "height": 160, "unemployed": true }' http://localhost:8098/buckets/s13898/keys/Kevin
+curl -XPUT -i -H "Content-Type: application/json" -d '{"firstName": "Carol", "lastName": "Cbacki", "height": 182, "unemployed": false }' http://localhost:8098/buckets/s13898/keys/Carol
+curl -XPUT -i -H "Content-Type: application/json" -d '{"firstName": "Fiona", "lastName": "Dbacki", "height": 120, "unemployed": true }' http://localhost:8098/buckets/s13898/keys/Fiona
+curl -XPUT -i -H "Content-Type: application/json" -d '{"firstName": "Julia", "lastName": "Ebacki", "height": 190, "unemployed": false }' http://localhost:8098/buckets/s13898/keys/Julia
+
+Zadanie 2.
+curl -i http://localhost:8098/buckets/s13898/keys/Carol
+
+Zadanie 3.
+curl -XPUT -i -H "Content-Type: application/json" -d '{"firstName": "Julia", "lastName": "Ebacki", "height": 190, "unemployed": false, "drivingLicense": true}' http://localhost:8098/buckets/s13898/keys/Julia
+
+Zadanie 4.
+curl -XPUT -i -H "Content-Type: application/json" -d '{"firstName": "Julia", "lastName": "Ebacki", "height": 190, "drivingLicense": true}' http://localhost:8098/buckets/s13898/keys/Julia
+
+Zadanie 5.
+curl -XPUT -i -H "Content-Type: application/json" -d '{"firstName": "Julia", "lastName": "Ebacki", "height": 190, "drivingLicense": false}' http://localhost:8098/buckets/s13898/keys/Julia
+
+Zadanie 6.
+curl -XDELETE -i http://localhost:8098/buckets/s13898/keys/Julia
+
+Zadanie 7.
+curl -i http://localhost:8098/buckets/s13898/keys/Julia
+
+Zadanie 8.
+curl -i -H "Content-Type: application/json" -d '{"firstName": "Hose"}' http://localhost:8098/buckets/s13898/keys
+
+Zadanie 9.
+curl -i http://localhost:8098/buckets/s13898/keys?keys=true
+curl -i http://localhost:8098/buckets/s13898/keys/ZVQWrb2s4kYFwSdMmG4YHl0w7Z8
+
+Zadanie 10.
+curl -XDELETE -i http://localhost:8098/buckets/s13898/keys/ZVQWrb2s4kYFwSdMmG4YHl0w7Z8

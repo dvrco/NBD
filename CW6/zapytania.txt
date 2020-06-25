@@ -1,0 +1,11 @@
+Zapytanie 1:
+
+MATCH (firstTown {name:"Darjeeling"}),(secondTown {name:"Sandakphu"}), path=allShortestPaths((firstTown)-[*]-(secondTown)) RETURN path
+
+Zapytanie 2:
+
+MATCH (Town:town { name: 'Darjeeling' }),(Peak:peak { name: 'Sandakphu' }),  Paths = allShortestPaths((Town)-[*]-(Peak)) WHERE ALL (PathAvailability IN relationships(Paths) WHERE PathAvailability.winter = "true") RETURN Paths
+
+Zapytanie 3:
+
+MATCH (firstTown {name:"Darjeeling"}),(secondTown {name:"Sandakphu"}), path = allShortestPaths((firstTown)-[*]-(secondTown)) RETURN path ORDER BY length(path) ASC
